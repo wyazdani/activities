@@ -1,0 +1,55 @@
+{
+  "server": {
+    "port": 3100
+  },
+  "client_errors": {
+    "400": null,
+    "404": "RESOURCE_NOT_FOUND",
+    "405": "METHOD_NOT_SUPPORTED",
+    "406": "CONTENT_TYPE_NOT_SUPPORTED"
+  },
+  "exposed_server": {
+    "host": "localhost",
+    "port": 3100,
+    "http_protocol": "http",
+    "version": "v3"
+  },
+  "server_errors": [
+    500
+  ],
+  "logger": {
+    "stack": {
+      "app": "activities"
+    },
+    "level": "info"
+  },
+  "bDebug": false,
+  "mongo": {
+    "database_host": "mongodb://localhost:27017/activitiesDev",
+    "options": {
+      "maxPoolSize": 5
+    }
+  },
+  "bumblebee": {
+    "http_protocol": "http",
+    "host": "127.0.0.1",
+    "port": 3065,
+    "request_timeout": 2000
+  },
+  "permissions": {
+    "http_request_options": {
+      "host": "127.0.0.1",
+      "port": 3110,
+      "protocol": "http",
+      "version": "v1",
+      "headers": {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      }
+    },
+    "request_timeout": 2000
+  },
+  "swagger_ui_config": {},
+  "app_domain": "donut",
+  "app_name": "activities"
+}

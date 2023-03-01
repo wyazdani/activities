@@ -1,0 +1,30 @@
+{
+  "mocha": {
+    "reporter": "spec"
+  },
+  "logger": {
+    "stack": {
+      "app": "activities"
+    },
+    "level": "none"
+  },
+  "mongo": {
+    "database_host": "mongodb://database:27017/activitiesCI",
+    "options": {}
+  },
+    "faked": {
+    "database_host": "mongodb://localhost:27017/activitiesTesting",
+    "options": {}
+  },
+  "mounteBank": {
+    "host": "mountebank",
+    "port": 2525,
+    "http_verb": {
+      "post": "POST",
+      "delete": "DELETE",
+      "head": "HEAD",
+      "put": "PUT",
+      "get": "GET"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "exposed_server": {
+    "host": "staging-activities.staffshift.com",
+    "port": 80,
+    "protocol": "http",
+    "version": "v3"
+  },
+  "permissions": {
+    "http_request_options": {
+      "host": "permissions-service"
+    },
+    "request_timeout": 15000
+  },
+  "swagger_ui_config": {
+    "swaggerUi": "/v3/docs",
+    "apiDocs": "/v3/api-docs"
+  }
+}

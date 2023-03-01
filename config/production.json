@@ -1,0 +1,15 @@
+{
+  "exposed_server": {
+    "host": "activities-service",
+    "port": 8000
+  },
+  "bumblebee": {
+    "host": "bumblebee-service",
+    "request_timeout": 2000
+  },
+  "permissions": {
+    "http_request_options": {
+      "host": "permissions-service"
+    }
+  }
+}

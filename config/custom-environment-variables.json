@@ -1,0 +1,10 @@
+{
+  "bumblebee": {
+    "port": "BUMBLEBEE_SERVICE_SERVICE_PORT"
+  },
+  "permissions": {
+    "http_request_options": {
+      "port": "PERMISSIONS_SERVICE_SERVICE_PORT"
+    }
+  }
+}

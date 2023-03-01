@@ -1,0 +1,15 @@
+{
+  "generator-a-24-node-swagger": {
+    "promptValues": {
+      "project_name": "activities",
+      "project_description": "Stores activities that was done by users on the system for history purposes",
+      "project_port": "3100",
+      "has_db": true,
+      "has_pubsub": false,
+      "google_project_name": "benguela-collection",
+      "requires_mountebank": true,
+      "requires_cors": false,
+      "has_entity_change": true
+    }
+  }
+}

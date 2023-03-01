@@ -1,0 +1,20 @@
+{
+  "exposed_server": {
+    "host": "10.0.5.101",
+    "port": 31915
+  },
+  "bumblebee": {
+    "host": "bumblebee-service",
+    "request_timeout": 15000
+  },
+  "permissions": {
+    "http_request_options": {
+      "host": "permissions-service"
+    },
+    "request_timeout": 15000
+  },
+  "swagger_ui_config": {
+    "swaggerUi": "/v3/docs",
+    "apiDocs": "/v3/api-docs"
+  }
+}

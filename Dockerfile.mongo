@@ -1,0 +1,5 @@
+FROM mongo:5.0.5
+
+RUN touch /var/log/mongodb.log && chmod 766 /var/log/mongodb.log
+
+CMD ["mongod", "--logpath", "/var/log/mongodb.log", "--logappend", "--nojournal"]

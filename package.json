@@ -1,0 +1,57 @@
+{
+  "name": "activities",
+  "version": "3.9.0",
+  "description": "Stores activities that was done by users on the system for history purposes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "sleep 2 && ./node_modules/.bin/nyc node testfile.js",
+    "lint": "./node_modules/.bin/eslint --ignore-path .gitignore . *.js",
+    "migrate": "node_modules/.bin/mongration -f ./migrations -c config/migration-config.js",
+    "start-actvity-change-stream": "node StreamingApplication.js --type=core --name=Activities"
+  },
+  "keywords": [
+    "swagger"
+  ],
+  "license": "Unlicense",
+  "private": true,
+  "dependencies": {
+    "a24-logzio-winston": "github:A24Group/a24-logzio-winston#v3.0.0",
+    "a24-node-advanced-query-utils": "github:A24Group/a24-node-advanced-query-utils.git#v3.4.0",
+    "a24-node-error-utils": "github:A24Group/a24-node-error-utils.git#v1.0.2",
+    "a24-node-permissions-client": "github:A24Group/a24-node-permissions-client.git#v1.6.0",
+    "a24-node-query-utils": "github:A24Group/a24-node-query-utils.git#v1.0.1",
+    "a24-node-timezone-utils": "github:A24Group/a24-node-timezone-utils.git#v1.9.0",
+    "a24-swagger-tools": "github:A24Group/a24-swagger-tools.git#v1.0.0",
+    "arg": "^5.0.2",
+    "async": "2.3.0",
+    "config": "1.21.0",
+    "connect": "^3.7.0",
+    "js-yaml": "^3.13.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^6.1.6",
+    "mongration": "^1.0.1",
+    "request": "2.81.0",
+    "swagger-tools": "^0.10.4"
+  },
+  "devDependencies": {
+    "a24nodetestutils": "github:A24Group/A24NodeTestUtils.git#v1.0.7",
+    "chai": "^4.0.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^3.19.0",
+    "is-my-json-valid": "^2.20.0",
+    "json-schema-deref": "^0.5.0",
+    "mocha": "2.4.5",
+    "moment": "^2.18.1",
+    "nock": "8.0.0",
+    "nyc": "14.1.1",
+    "rewire": "2.5.2",
+    "sinon": "^7.2.2",
+    "sinon-chai": "^3.3.0",
+    "supertest": "3.0.0",
+    "swagger-test-templates": "^1.6.0",
+    "timefreeze": "^1.1.0",
+    "xunit-file": "0.0.9",
+    "z-schema": "3.17.0"
+  }
+}
